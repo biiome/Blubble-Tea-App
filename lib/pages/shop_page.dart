@@ -41,6 +41,8 @@ class _ShopPageState extends State<ShopPage> {
                 style: TextStyle(fontSize: 20.0),
               ),
 
+              const SizedBox(height: 10),
+
               // list of drinks for sale
               Expanded(
                 child: ListView.builder(
@@ -52,6 +54,7 @@ class _ShopPageState extends State<ShopPage> {
                     //return that drink as a tile
                     return DrinkTile(
                       drink: individualDrink,
+                      trailing: const Icon(Icons.arrow_forward),
                       onTap: () => goToOrderPage(individualDrink),
                     );
                   },
