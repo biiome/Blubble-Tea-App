@@ -138,13 +138,20 @@ class _OrderPageState extends State<OrderPage> {
                   ],
                 ),
 
+                // add spacing between sliders and cart button
+                const SizedBox(height: 30),
+
                 // add to cart button
-                MaterialButton(
-                  color: Colors.brown,
-                  onPressed: addToCart,
-                  child: const Text(
-                    'Add to cart',
-                    style: TextStyle(color: Colors.white),
+                ButtonTheme(
+                  minWidth: 275,
+                  height: 60,
+                  child: MaterialButton(
+                    color: Colors.brown,
+                    onPressed: addToCart,
+                    child: const Text(
+                      'Add to cart',
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                 ),
               ],

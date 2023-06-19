@@ -36,9 +36,20 @@ class _ShopPageState extends State<ShopPage> {
           child: Column(
             children: [
               // heading
-              const Text(
-                'Bubble Tea Shop',
-                style: TextStyle(fontSize: 20.0),
+              const Padding(
+                padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Bubble Tea Shop',
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ],
+                ),
               ),
 
               const SizedBox(height: 10),

@@ -18,6 +18,7 @@ class DrinkTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
+        margin: const EdgeInsets.only(bottom: 12),
         decoration: BoxDecoration(
           color: Colors.brown[100],
           borderRadius: BorderRadius.circular(12),

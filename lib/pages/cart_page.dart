@@ -15,7 +15,7 @@ class CartPage extends StatefulWidget {
 class _CartPageState extends State<CartPage> {
   // remmove from dart
   void removeFromCart(Drink drink) {
-    Provider.of(context, listen: false).removeFromCart(drink);
+    Provider.of<BubbleTeaShop>(context, listen: false).removeFromCart(drink);
   }
 
   @override
