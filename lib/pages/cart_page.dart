@@ -52,13 +52,17 @@ class _CartPageState extends State<CartPage> {
                 ),
               ),
               // pay button
-              MaterialButton(
-                color: Colors.brown,
-                child: const Text(
-                  'PAY',
-                  style: TextStyle(color: Colors.white),
+              ButtonTheme(
+                minWidth: 275,
+                height: 60,
+                child: MaterialButton(
+                  color: Colors.brown,
+                  child: const Text(
+                    'PAY',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  onPressed: () {},
                 ),
-                onPressed: () {},
               ),
             ],
           ),
